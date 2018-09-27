@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8'>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+	<div class="container">
+
+
+		<!---->
+
+		<button class="crescer" onclick="trocarImagem()">Crescer</button>
+
+		<img id="imagem" src="imgs/crianca.png" class="imagem-limitada" alt="">
+
+		<script>
+			function trocarImagem() {
+				document.getElementById('imagem').src = 'imgs/adulto.png';
+				console.log("Imagem trocada com sucesso!");
+			}
+		</script>
+
+		<!---->
+
+
+	</div>
+	
+</body>
+</html>

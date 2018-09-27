@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8'>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+	<div class="container">
+
+
+		<!---->
+		
+		<img class="miniatura" onclick="imgEsquerda()" src="imgs/estrela.jpg" alt="">
+		<img class="miniatura" onclick="imgMeio()" src="imgs/sol.jpg" alt="">
+		<img class="miniatura" onclick="imgDireita()" src="imgs/coracao.jpg" alt="">
+
+		<div id="seccao"></div>
+		
+		<script>
+	
+			var imagem = document.getElementById('imagem');
+
+			function imgEsquerda() {
+				document.getElementById('seccao').innerHTML = "<img src='imgs/estrela.jpg' alt=''>";
+			}
+
+			function imgMeio() {
+				document.getElementById('seccao').innerHTML = "<img src='imgs/sol.jpg' alt=''>";
+			}
+
+			function imgDireita() {
+				document.getElementById('seccao').innerHTML = "<img src='imgs/coracao.jpg' alt=''>";
+			}
+
+		</script>
+
+		<!---->
+
+
+	</div>
+	
+</body>
+</html>

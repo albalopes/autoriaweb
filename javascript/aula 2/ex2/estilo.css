@@ -1,0 +1,46 @@
+body{
+	font-family: arial;
+}
+
+.container{
+	background-color: #cbe5ff;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding: 20px 0px;
+	width: 800px;
+	box-shadow: 5px 5px 5px #c0c1c2;
+	border: 1px solid #dadada;
+}
+
+.container div.tamanho-imagem{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.container h1{
+}
+
+.container p{
+	font-size: 25px;
+}
+
+.container button{
+	padding: 10px 20px;
+	font-size: 25px;
+}
+
+.container button.crescer{
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+
+img.imagem-limitada{
+	width: 200px;
+}
+
+img.miniatura{
+	width: 60px;
+	height: 60px;
+}

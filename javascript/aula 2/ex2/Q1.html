@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8'>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+	
+	<div id="galeria" class="container">
+		
+	</div>
+
+	<script type="text/javascript">
+
+		var flores = ["Amarílis", "Amor-perfeito", "Antúrio", "Azaléia", "Begônia", "Boca-de-leão", "Botão-de-ouro", "Calêndula", "Camélia", "Copo-de-leite"];
+		var galeria = document.getElementById("galeria");
+
+		for(i=0; i<flores.length; i++) {
+			galeria.innerHTML += "<img width='50' height='50' style='margin: 0px 5px' src='" + flores[i] +".jpg'>"
+		};
+		
+	</script>
+</body>
+</html>

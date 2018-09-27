@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8'>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+	
+	<div class="container">
+		<h1>Que forma geométrica você gostaria de conhecer?</h1>
+		<img width="150" id="imagem" src="imgs/interrogacao.png">
+		<input id="forma" type="text">
+		<button type="button" onclick="verificarForma()">Ok</button>
+	</div>
+
+	<script type="text/javascript">
+		function verificarForma () {
+
+			var forma = document.getElementById('forma');
+			var imagem = document.getElementById('imagem');
+
+			if (forma.value == 'quadrado') {
+				imagem.src = "imgs/quadrado.jpg";
+			}
+			else if (forma.value == 'quadrado') {
+				imagem.src = "imgs/triangulo.jpg";
+			}
+			else if (forma.value == 'circulo') {
+				imagem.src = "imgs/circulo.jpg"
+			}
+			else if (forma.value == 'triangulo') {
+				imagem.src = "imgs/triangulo.jpg"
+			}
+			else{
+				alert('Erro.')
+			}
+			
+		}
+	</script>
+</body>
+</html>

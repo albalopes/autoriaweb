@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8'>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+	
+	<div class="container">
+		<h1>Digite o nome de uma flor</h1>
+		<input id="texto" type="text">
+		<button onclick="verificarFlor()" type="button">Ok</button>
+	</div>
+
+	<script type="text/javascript">
+
+		var flores = ["Amarílis", "Amor-perfeito", "Antúrio", "Azaléia", "Begônia", "Boca-de-leão", "Botão-de-ouro", "Calêndula", "Camélia", "Copo-de-leite"];
+		var texto = document.getElementById('texto');
+
+		function verificarFlor(){
+			
+			for(i=0; i<flores.length; i++) {
+
+				if (texto.value == flores[i]) {
+					var achou = true;
+					break;
+				}
+				else{
+					var achou = false;
+				};
+
+			};
+
+			if (achou) {
+				alert('Essa flor existe na lista! :)');
+			}
+			else{
+				alert('Essa flor NÃO existe na lista! :(');
+			};
+
+		};
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8'>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+	<div class="container">
+
+
+		<!---->
+		<div class="tamanho-imagem">
+			<button onclick="imagemPequena()">Pequena</button>
+			<button onclick="imagemMedia()">Média</button>
+			<button onclick="imagemGrande()">Grande</button>
+		</div>
+
+		<img id="imagem" src="imgs/bebe.jpg" class="imagem-limitada" alt="">
+		
+		<script>
+	
+			var imagem = document.getElementById('imagem');
+
+			function imagemPequena() {
+				imagem.style.width = '100px';
+				imagem.style.heigth = '100px';
+			}
+
+			function imagemMedia() {
+				imagem.style.width = '300px';
+				imagem.style.heigth = '300px';
+			}
+
+			function imagemGrande() {
+				imagem.style.width = '500px';
+				imagem.style.heigth = '500px';
+			}
+
+		</script>
+
+		<!---->
+
+
+	</div>
+	
+</body>
+</html>

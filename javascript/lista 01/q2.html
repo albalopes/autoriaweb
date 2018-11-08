@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            div{border: 1px solid black}
+        </style>
+        <script>
+            
+            function mudarCor(){
+                if (document.getElementById('cores').value=='red'){
+                    document.getElementById('page').style.backgroundColor = 'red';
+                }else{
+                    if (document.getElementById('cores').value=='green'){
+                        document.getElementById('page').style.backgroundColor = 'green';
+                    }else{
+                        if (document.getElementById('cores').value=='yellow'){
+                            document.getElementById('page').style.backgroundColor = 'yellow';
+                        }else{
+                            if (document.getElementById('cores').value=='red'){
+                                document.getElementById('page').style.backgroundColor = 'red';
+                            }
+                        }
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div id='page'>
+            <select onchange="mudarCor()" id="cores">
+                <option selected="selected">-- SELECT A COLOR --</option>
+                <option value="red" onchange="mudarCor()">RED</option>
+                <option value="green" onchange="mudarCor()">GREEN</option>
+                <option value="yellow" onchange="mudarCor()">YELLOW</option>
+                <option value="blue" onchange="mudarCor()">BLUE</option>
+            </select>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        img{
+            width: 300px;
+        }
+    </style>
+    
+</head>
+<body>
+    <button type="button" onclick="anterImg()">Anterior</button>
+    <button type="button" onclick="proximImg()">Próximo</button>
+    <div>
+        <img id="img" src="https://i1.wp.com/gamelogia.com.br/wp-content/uploads/2016/11/gamer.jpg?resize=1280%2C640&ssl=1" alt="">
+    </div>
+    
+    <script>
+        var img = document.getElementById('img');
+        imgs = [
+            "https://i1.wp.com/gamelogia.com.br/wp-content/uploads/2016/11/gamer.jpg?resize=1280%2C640&ssl=1",
+            "https://1h4hfe10xz8m3g3xkh2wb9lc-wpengine.netdna-ssl.com/blog/files/2015/08/thestocks-imagem.jpg",
+            "http://ap.imagensbrasil.org/images/imagens-lobos.jpg",
+            "https://www.gettyimages.pt/gi-resources/images/Homepage/Hero/PT/PT_hero_42_153645159.jpg",
+            "http://s.glbimg.com/jo/g1/f/original/2016/05/02/palestinian-gaza-daily_life_mohammed_abed_afp.jpg",
+            "https://pbs.twimg.com/profile_images/711520911082569728/CZvvAEVD.jpg",
+            "http://www.topimagens.com.br/imagens/imagens-mais-novas.jpg",
+            "https://i1.wp.com/marketingcomcafe.com.br/wp-content/uploads/2017/12/banco-imagens-gratis.png",
+            "https://universoestendido.com.br/wp-content/uploads/2018/04/imagens-do-vegeta.jpg",
+            "http://www.fundosanimais.com/1920x1080/imagens-tigres.jpg"
+        ];
+        function proximImg() {
+            for(i=0; i<imgs.length - 1; i++){
+                if(img.src == imgs[i]){
+                    document.getElementById('img').src = imgs[i + 1];
+                    break;
+                }
+            }
+        }
+        function anterImg() {
+            for(i=1; i<imgs.length; i++){
+                if(img.src == imgs[i]){
+                    document.getElementById('img').src = imgs[i - 1];
+                    break;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

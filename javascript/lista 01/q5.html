@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function inverterSrc() {
+            var img1 = document.getElementById('img1').src;
+            var img2 = document.getElementById('img2').src;
+            
+            var aux = img1;
+            document.getElementById('img1').src = img2;
+            document.getElementById('img2').src = aux;
+        }
+    </script>
+</head>
+<body>
+    <img id="img1" src="https://www.yugioh-world.com/wp-content/uploads/2014/01/ygo_Shonen-Jump-Promo-Judgment-of-the-Pharaoh.jpg" alt="imagem 1" width="240">
+    <img id="img2" src="https://vignette.wikia.nocookie.net/yugioh/images/6/65/DestructionDragon-LC06-EN-UR-LE.png/revision/latest?cb=20180323194757" alt="imagem 2" width="240">
+    <button type="button" onclick="inverterSrc()">Alternar</button>
+</body>
+</html>

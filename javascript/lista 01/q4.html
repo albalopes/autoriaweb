@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+        function mudarP (){
+            var display = document.getElementById('p').style.display;
+            if(display=='none'){
+                document.getElementById('p').style.display='block';
+            }else{
+                document.getElementById('p').style.display='none';
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <button type="button" onclick="mudarP()">Ocultar/mostrar</button>
+    <p style="display: block" id="p">Lorem ipsum dolor sit amet.</p>
+</body>
+</html>
